@@ -17,7 +17,7 @@ header{
     background-image: url(ursm.jpg);
     background-repeat: no-repeat;
 background-size: 100% 100%;
-padding-bottom: 7rem;
+padding-bottom: 30%;
 overflow: hidden;
 box-shadow: -2px 15px 5px 0px rgba(0,0,0,0.75);
 }
@@ -31,19 +31,26 @@ header nav{
 
 }
 
-header nav .logo img{
- margin-left: 2.9rem;
- margin-top: 3rem;
+header nav .logo {
+  position: relative;
+  display: flex;
 }
-header nav .logo h3{
-    align-items: center;
-    font-size: 1.8rem;
-    font-weight:900;
-    line-height: 2rem;
-    color: rgba(15, 35, 252, 0.875);
-    font-stretch: ultra-expanded;
-    margin-top: .5rem;
+header nav .logo .logo-sub{
+  position: absolute;
+  top: -5rem;
+  left: 1rem;
 }
+header nav .logo .ursmlogo a img{
+margin-left: 4rem;
+}
+
+
+header nav .logo .ursmain{
+  position: absolute;
+  top: 9rem;
+  left: -2rem;
+}
+
 header nav a img{
     width: 7rem;
     height: 6rem;
@@ -75,7 +82,7 @@ header nav.container {
   header nav .container:hover .text {
     opacity: 1;
     right: 0;
-    width: 19%;
+    width: 19.5%;
     height: 97.5%;
   }
 
@@ -102,62 +109,6 @@ header nav.container {
  color: black;
   }
 
-
-header .welcome-main{
-    margin-left: 4rem;
-    margin-top: 4rem;
-    font-size: 3.5rem;
-    color: rgba(6, 6, 7, 0.875);
-    margin-right: 50rem;
-}
-
-header .welcome-sub{
-    display: flex;
-}
-header .welcome-sub h1{
-font-stretch:ultra-expanded;
-color: white;
-}
-
-header .welcome-main .welcome-sub2{
-    margin-top: 2.4rem;
-    margin-left: 1rem;
-    color: rgba(0, 0, 255, 0.821);
-}
-/* 
-header .welcome-main .contents{
-position: absolute;
-top: 25rem;
-right: 25rem;
-background-color: azure;
-border-top-left-radius:2rem ;
-border-bottom-right-radius:2rem ;
-padding: .5rem 1rem;
-text-transform: uppercase;
-font-size: 3rem;
-font-weight: bolder;
-}
-
-header .welcome-main .contents:hover{
-  background-color: rgba(24, 24, 211, 0.947);
-  color: white;
-  transform: scale(1.1);
-} */
-header .welcome-main .welcome2{
-font-size: 4rem;
-font-stretch: ultra-condensed;
-padding-left: 1rem;
-color: rgba(24, 24, 211, 0.947);
-}
-header .welcome-main .intro {
-font-size: 1.5rem;
-margin-top: 1rem;
-padding-left: 2rem;
-padding-right: 4rem;
-color: rgba(0, 0, 0, 0.843);
-text-align: justify;
-}
-
 /* header end */
 
 /* arrow up */
@@ -179,33 +130,90 @@ text-align: justify;
   
 /* About Us start */
 .about_us{
-  /* background: linear-gradient(to top right, #2615c4 1%, #000000 100%); */
-  background-image: url(bgabout.png);
+  background: linear-gradient(to top right, #2615c4 1%, #000000 100%);
+  /* background-image: url(bgabout.png); */
     width: 100%;
     height: 40%;
-    background-size: 100% 100%;
+    /* background-size: 100% 100%; */
+    box-shadow: -2px 15px 5px 0px rgba(0,0,0,0.75);
 }
 .about_us .about-main {
     display: flex;
-    padding:2rem 2rem;
+  padding: 0 5%;
+  margin: 0 3%;
 }
-.about_us .about-main .about-sub-main img{
+/* .about_us .about-main .about-sub-main img{
   box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-}
+  border-radius: 1rem;
+  width:700px; 
+  height:400px;
+  margin-right: 5rem;
+  margin-top: 1.5rem;
+} */
+
 
 .about_us .about-main .about-sub h3{
   text-transform: uppercase;
-  text-align: center;
-  margin-top: 1rem;
-  padding-top: 1rem;
   font-size: 2.6rem;
   color: #ffffffd6;
+  text-align: center;
+  margin-top: 5%;
 }
 .about_us .about-main .about-sub p{
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   text-align: justify;
   line-height: 2rem;
-  padding: 2rem 4rem;
   color: #ffffffd6;
+  padding-bottom: 4rem;
+  margin-top: 2rem;
+  font-stretch: ultra-condensed;
 }
 /* About Us end */
+
+/* vision,mission,core-values start */
+.vision{
+  background: linear-gradient(to top right, #2615c4 1%, #000000 100%);
+  width: 100%;
+  height: 80%;
+  
+}
+.vision .vision-main{
+  padding: 2% 3%;
+  margin: 0 3%;
+  display: flex;
+}
+
+.vision .vision-main .vision-sub{
+font-size: 1.5rem;
+line-height: 2rem;
+font-stretch: ultra-condensed;
+margin: 0 1%;
+text-align:justify;
+border: 1px solid black;
+border-radius: 1rem;
+box-shadow: -2px 15px 5px 0px rgba(0,0,0,0.75);
+}
+
+.vision .vision-main .vision-sub h3{
+  margin-top: 2%;
+}
+
+.vision .vision-main .vision-sub p{
+  margin-top: 2%;
+}
+.vision .vision-main #mission{
+background-color: #fff;
+padding: 1rem 2rem;
+}
+.vision .vision-main #vission{
+  background-color: #1909a5f3;
+  color: white;
+  padding: 1rem 2rem;
+}
+.vision .vision-main #core{
+  text-align: left;
+  background-color: #fff;
+  padding:  1rem 2rem;
+  font-size: 1.4rem;
+}
+/* vision,mission,core-values ends */
