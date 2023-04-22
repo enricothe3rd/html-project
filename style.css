@@ -17,7 +17,7 @@ header{
     background-image: url(ursm.jpg);
     background-repeat: no-repeat;
 background-size: 100% 100%;
-padding-bottom: 30%;
+padding-bottom: 38%;
 overflow: hidden;
 box-shadow: -2px 15px 5px 0px rgba(0,0,0,0.75);
 }
@@ -30,6 +30,10 @@ header nav{
     padding-left: 3rem;
 
 }
+header nav .logo .ursmlogo a img{
+  margin-left: 4rem;
+  z-index: 1;
+  }  
 
 header nav .logo {
   position: relative;
@@ -37,19 +41,28 @@ header nav .logo {
 }
 header nav .logo .logo-sub{
   position: absolute;
-  top: -5rem;
-  left: 1rem;
+  top: 4.5rem;
+  left: 1.5rem;
 }
-header nav .logo .ursmlogo a img{
-margin-left: 4rem;
-}
-
 
 header nav .logo .ursmain{
   position: absolute;
   top: 9rem;
   left: -2rem;
 }
+header nav .logo .ursmain .maindescrip {
+  position: inherit;
+  top: 24rem;
+  left:9rem;
+  background-color: rgba(0, 0, 0, 0.309);
+padding: 1rem .5rem;
+}
+header nav .logo .ursmain .maindescrip p  {
+color: rgb(212, 212, 212);
+font-size: 1.3rem;
+text-align: justify;
+line-height: 1.7rem;
+   }
 
 header nav a img{
     width: 7rem;
@@ -89,20 +102,21 @@ header nav.container {
   header nav .container .text ul {
     float: right;
     color:rgb(255, 255, 255);
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-stretch: ultra-condensed;
     line-height: 4rem;
     opacity: 80%;
     list-style: none;
-
   }
   
   header nav .container .text ul  a li{
     color: #ffffff;
+    
   }
  
   header nav .container .text ul  li{
  padding:0 3rem ;
+
   }
   header nav .container .text ul a li:hover{
  background-color: #fff;
@@ -217,3 +231,65 @@ padding: 1rem 2rem;
   font-size: 1.4rem;
 }
 /* vision,mission,core-values ends */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1920px) {
+  header nav .logo .ursmlogo a img {
+    margin-left: 2.7rem;
+    } 
+    header nav .logo .logo-sub{
+      left: -.1rem;
+    }
+    header nav .logo .ursmain{
+      top: 9rem;
+      left: -5rem;
+    }
+    header nav .container .text ul  li{
+       padding: 0 2.3rem;
+       line-height: 5rem;
+         }
+}
+
+@media (max-width: 1366px) {
+  header nav{
+    margin-top: 1rem;
+}
+  header nav .logo .ursmlogo a img{
+   height: 80px;
+   margin-left: 2rem;
+    }  
+    header nav .logo .logo-sub{
+      position: absolute;
+      top: 3.5rem;
+      left: -1rem;
+    }
+  header nav .logo .ursmain{
+    top: 7rem;
+    left: -9rem;
+  }
+     header nav .logo .ursmain img{
+      height: 270px;
+     }
+     header nav .logo .ursmain .maindescrip {
+      top: 15rem;
+      left:17rem;
+      font-size: 1.2rem;
+      line-height: 1.3rem;
+    }
+    header nav .container img{
+      height: 50px;
+      width: 60px;
+  }
+}
