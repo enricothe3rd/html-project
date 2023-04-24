@@ -778,3 +778,111 @@ padding-right: 5rem;
 }
    
 }
+
+
+@media (max-width: 768px ){
+  header{
+    padding-bottom: 50%;
+  }
+
+  header nav .container .text {
+    overflow: hidden;
+  }
+header nav .container:hover .text {
+width:60%;
+left: -20rem;
+height: 83%;
+}
+
+header nav .container .text ul  li{
+padding-right: 9rem;
+line-height: 2.8rem;
+}}
+
+
+
+@media (max-width: 400px ){
+  header{
+    padding-bottom:75%;
+  }
+
+  header nav .container .text {
+    overflow: hidden;
+  }
+header nav .container:hover .text {
+width:100%;
+left: -40rem;
+height: 64%;
+}
+
+header nav .container .text ul  li{
+padding-right: 12.5rem;
+line-height: 2.4rem;
+}}
+
+
+
+@media (max-width: 289px ){
+  header{
+    padding-bottom:85%;
+  }
+  header nav .logo .ursmlogo a img{
+    height: 38px;
+    margin-top: 1rem;
+     }  
+     header nav .logo .logo-sub{
+       top: 1.5em;
+       left: -2.2rem;
+     }
+     header nav .logo .logo-sub img{
+       width: 100px;
+     }
+      header nav .logo .ursmain{
+       top: 6rem;
+       left: -1rem;
+     }
+     header nav .logo .ursmain img{
+      width: 200px;
+     }
+     header nav .logo .ursmain .maindescrip p{
+       font-size: .4rem; 
+       line-height: .7rem;
+      }
+      header nav .logo .ursmain .maindescrip {
+       top: 8rem;
+       left:-2rem;
+     }
+    
+  header nav .container .text {
+    overflow: hidden;
+  }
+header nav .container:hover .text {
+width:115%;
+left: -42.7rem;
+height:53.6%;
+}
+
+header nav .container .text ul  li{
+padding-right: 6rem;
+line-height: 2rem;
+}
+   /* vision,mission,core-values start */
+
+
+   .vision .vision-main #mission{
+    grid-template-columns: 11.6rem;
+    line-height: 1.2rem;
+    font-size: .8rem;
+    }
+    .vision .vision-main #vission{
+    font-size: .8rem;
+    line-height: 1.2rem;
+    }
+    .vision .vision-main #core{
+    font-size: .8rem;
+    line-height: 1.2rem;
+    }
+    .vision .vision-main .grid{
+      grid-template-columns: repeat(auto-fit, 16rem);
+    }
+    /* vision,mission,core-values ends */}
