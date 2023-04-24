@@ -33,6 +33,7 @@ header nav{
 header nav .logo .ursmlogo a img{
   margin-left: 4rem;
   z-index: 1;
+
   }  
 
 header nav .logo {
@@ -316,9 +317,18 @@ padding-top: 1rem;
   font-stretch: ultra-condensed;
   margin: 0 .5%;
   }
+  .vision .vision-main #mission{
+    display: grid;
+    grid-template-columns: 500px;
+  }
+  .vision .vision-main .grid{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    gap: .5rem;
+  }
 /* vision,mission,core-values start */
 
-     @media (max-width: 768px){
+     @media (max-width: 768px ){
       header{
         padding-bottom: 50%;
       }
@@ -399,6 +409,7 @@ flex-wrap: wrap;
       font-stretch: ultra-condensed;
       margin: 0 .5%;
       margin-bottom: 1rem;
+    
       }
       
 .vision .vision-main .vision-sub h3{
@@ -412,22 +423,315 @@ flex-wrap: wrap;
 background-color: #fff;
 padding: 0 2rem;
 padding-top: 1rem;
+display: grid;
+grid-template-columns: 600px;
 }
 .vision .vision-main #vission{
   background-color: #1909a5f3;
   color: white;
   padding: 0 2rem;
   padding-top: 1rem;
-  font-size: 1.5rem;
-  
+  font-size: 1.3rem;
+ 
 }
 .vision .vision-main #core{
   text-align: left;
   background-color: #fff;
   padding:  1rem 2rem;
-  font-size: 1.8rem;
+  font-size: 1.3rem;
+}
+.vision .vision-main .grid{
+  display:grid;
+  grid-template-columns: 49% 49%;
+  gap: .5rem;
+  
 }
 /* vision,mission,core-values ends */
 
      }
+}
+
+@media (max-width: 411px ){
+  header{
+    padding-bottom: 75%;
+  }
+
+  header nav .logo .ursmlogo a img{
+   height: 40px;
+   width: 80px;
+   margin-left: -1.3rem;
+   margin-top: 2rem;
+    }  
+    header nav .logo .logo-sub{
+      position: absolute;
+      top: 3rem;
+      left: -2.9rem;
+      
+    }
+    header nav .logo .logo-sub img{
+      width: 130px;
+    }
+     header nav .logo .ursmain img{
+      height: 150px;
+      width: 300px;
+     }
+     header nav .logo .ursmain{
+      top: 7rem;
+      left: -1rem;
+    }
+    header nav .logo .ursmain .maindescrip p{
+      font-size: .8rem; 
+      line-height: .8rem;
+     }
+     header nav .logo .ursmain .maindescrip {
+      top: 9rem;
+      left:0rem;
+      padding: .5rem .5rem;
+    }
+   
+    header nav .container img{
+      height: 30px;
+      width: 50px;
+      position: absolute;
+      top: 3.5rem;
+      right: 3rem;
+  }
+
+
+header nav .container:hover .text {
+width:60%;
+height: 59.7%;
+}
+
+header nav .container .text ul  li{
+padding:0 3rem ;
+font-size: 1rem;
+line-height: 2.4rem;
+}
+    /* about us start */
+    .about_us .about-main .about-sub h3{
+      font-size: 1.8rem;
+      margin-top: 3rem;
+    }
+      .about_us .about-main .about-sub p{
+        font-size: 1.1rem;
+        margin-top: 1.5rem;
+      }
+          /* about us ends */
+          /* vision,mission,core-values start */
+.vision .vision-main{
+padding: 4% 3%;
+          }
+.vision .vision-main .vision-sub{
+  font-size: 1rem;
+  }
+
+.vision .vision-main .vision-sub p{
+padding-bottom: 1rem;
+}
+.vision .vision-main #mission{
+grid-template-columns: 296px;
+line-height: 1.7rem;
+}
+.vision .vision-main #vission{
+font-size: 1rem;
+line-height: 1.4rem;
+}
+.vision .vision-main #core{
+font-size: 1rem;
+line-height: 1.6rem;
+}
+.vision .vision-main .grid{
+grid-template-columns: 49% 49%;
+}
+/* vision,mission,core-values ends */
+
+}
+
+@media (max-width: 375px ){
+ header {
+  padding-bottom: 79%;
+ }
+     header nav .logo .ursmain .maindescrip {
+      left:-2.5rem;
+    }
+
+header nav .container:hover .text {
+width:68%;
+height: 52%;
+}
+
+header nav .container .text ul  li{
+font-size: 1.1rem;
+line-height: 2.1rem;
+}
+    /* about us start */
+      .about_us .about-main .about-sub p{
+   line-height: 1.5rem;
+      }
+          /* about us ends */
+          /* vision,mission,core-values start */
+
+
+.vision .vision-main #mission{
+grid-template-columns: 268px;
+line-height: 1.5rem;
+font-size: 1.1rem;
+}
+.vision .vision-main #vission{
+font-size: 1rem;
+line-height: 1.5rem;
+}
+.vision .vision-main #core{
+font-size: 1rem;
+line-height: 1.4rem;
+}
+.vision .vision-main .grid{
+  grid-template-columns: repeat(auto-fit, 334px);
+}
+/* vision,mission,core-values ends */
+
+}
+
+
+@media (max-width: 360px ){
+  header{
+    padding-bottom: 78%;
+  }
+
+  header nav .logo .ursmlogo a img{
+   height: 38px;
+   margin-top: 1rem;
+    }  
+    header nav .logo .logo-sub{
+      top: 1.5em;
+      left: -2.2rem;
+    }
+    header nav .logo .logo-sub img{
+      width: 100px;
+    }
+     header nav .logo .ursmain{
+      top: 6rem;
+      left: -2.5rem;
+    }
+    header nav .logo .ursmain .maindescrip p{
+      font-size: .6rem; 
+      line-height: .7rem;
+     }
+     header nav .logo .ursmain .maindescrip {
+      top: 8.5rem;
+      left:0;
+    }
+   
+    header nav .container img{
+      height: 25px;
+      width: 50px;
+      position: absolute;
+      top: 2.8rem;
+      right: 1.8rem;
+  }
+
+
+header nav .container:hover .text {
+width:109%;
+left: -42rem;
+height: 54.6%;
+}
+
+header nav .container .text ul  li{
+padding-right: 11rem;
+line-height: 2.2rem;
+}
+    /* about us start */
+    .about_us .about-main .about-sub h3{
+      font-size: 1.5rem;
+      margin-top: 2rem;
+    }
+      .about_us .about-main .about-sub p{
+        font-size:.8rem;
+        margin-top: 1rem;
+        line-height: 1.1rem;
+      }
+          /* about us ends */
+      /* vision,mission,core-values start */
+
+
+.vision .vision-main #mission{
+  grid-template-columns: 255px;
+  line-height: 1.4rem;
+  font-size: .9rem;
+  }
+  .vision .vision-main #vission{
+  font-size: .9rem;
+  line-height: 1.4rem;
+  }
+  .vision .vision-main #core{
+  font-size: .9rem;
+  line-height: 1.4rem;
+  }
+  .vision .vision-main .grid{
+    grid-template-columns: repeat(auto-fit, 325px);
+  }
+  /* vision,mission,core-values ends */
+}
+
+
+@media (max-width: 375px ){
+  header{
+    padding-bottom: 67%;
+  }
+    header nav .logo .ursmain .maindescrip p{
+      font-size: .6rem; 
+      line-height: .75rem;
+     }
+
+header nav .container:hover .text {
+width:109%;
+left: -42rem;
+height: 56.2%;
+}
+
+header nav .container .text ul  li{
+padding-right: 12rem;
+line-height: 2.1rem;
+}
+    /* about us start */
+    .about_us .about-main .about-sub h3{
+      font-size: 1.5rem;
+      margin-top: 2rem;
+    }
+      .about_us .about-main .about-sub p{
+        font-size:.8rem;
+        margin-top: 1rem;
+        line-height: 1.1rem;
+      }
+          /* about us ends */
+      /* vision,mission,core-values start */
+
+
+.vision .vision-main #mission{
+  grid-template-columns: 255px;
+  line-height: 1.4rem;
+  font-size: .9rem;
+  }
+  .vision .vision-main #vission{
+  font-size: .9rem;
+  line-height: 1.4rem;
+  }
+  .vision .vision-main #core{
+  font-size: .9rem;
+  line-height: 1.4rem;
+  }
+  .vision .vision-main .grid{
+    grid-template-columns: repeat(auto-fit, 325px);
+  }
+  /* vision,mission,core-values ends */
+}
+@media (max-width: 360px ){
+  
+
+  header nav .container .text ul  li{
+  padding-right: 11rem;
+  line-height: 2rem;
+  }
 }
