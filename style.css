@@ -632,6 +632,19 @@ line-height: 1.4rem;
   }
 
 
+  header nav .container .text {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    transition: opacity 0.5s;
+    margin-left: 40rem;
+
+  }
 header nav .container:hover .text {
 width:109%;
 left: -42rem;
