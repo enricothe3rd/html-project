@@ -91,7 +91,7 @@ header nav.container {
     opacity: 0;
     transition: opacity 0.5s;
     margin-left: 40rem;
-
+overflow: hidden;
   }
   header nav .container:hover .text {
     opacity: 1;
